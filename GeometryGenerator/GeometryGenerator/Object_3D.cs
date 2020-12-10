@@ -16,12 +16,19 @@ namespace GeometryGenerator
 
         public Object_3D()
         {
-            materialM = new MaterialManager();
+
+        }
+
+        protected void ApplyMaterial()
+        {
+            model.Material = materialM.MaterialF;
+            model.BackMaterial = materialM.MaterialB;
         }
 
         public GeometryModel3D ToGeometryModel3D()
         {
             return model;
         }
+
     }
 }

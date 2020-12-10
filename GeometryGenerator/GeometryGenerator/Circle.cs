@@ -10,14 +10,15 @@ namespace GeometryGenerator
 {
     public class Circle : Transform
     {
-        private int sides = 32;
+        protected int sides = 32;
+        protected double radius = 1;
         public Circle()
         {
             materialM.InstantiateMaterial();
             //Setting materials
             model.Material = materialM.MaterialF; model.BackMaterial = materialM.MaterialB;
             //Creating mesh
-            preMesh.Positions = genCircle(new Point3D(0, 0, 0), 1); preMesh.TriangleIndices = genInd(true);
+            preMesh.Positions = genCircle(new Point3D(0, 0, 0)); preMesh.TriangleIndices = genInd(true);
             model.Geometry = preMesh;
         }
 
@@ -27,7 +28,7 @@ namespace GeometryGenerator
             //Setting materials
             model.Material = base.materialM.MaterialF; model.BackMaterial = materialM.MaterialB;
             //Creating mesh
-            preMesh.Positions = genCircle(centerP, 1); preMesh.TriangleIndices = genInd(true);
+            preMesh.Positions = genCircle(centerP); preMesh.TriangleIndices = genInd(true);
             model.Geometry = preMesh;
         }
 
@@ -41,17 +42,18 @@ namespace GeometryGenerator
             //Setting materials
             model.Material = base.materialM.MaterialF; model.BackMaterial = materialM.MaterialB;
             //Creating mesh
-            preMesh.Positions = genCircle(new Point3D(0, 0, 0), 1); preMesh.TriangleIndices = genInd(true);
+            preMesh.Positions = genCircle(new Point3D(0, 0, 0)); preMesh.TriangleIndices = genInd(true);
             model.Geometry = preMesh;
         }
 
         public Circle(double radius)
         {
+            this.radius = radius;
             materialM.InstantiateMaterial();
             //Setting materials
             model.Material = base.materialM.MaterialF; model.BackMaterial = materialM.MaterialB;
             //Creating mesh
-            preMesh.Positions = genCircle(new Point3D(0, 0, 0), radius); preMesh.TriangleIndices = genInd(true);
+            preMesh.Positions = genCircle(new Point3D(0, 0, 0)); preMesh.TriangleIndices = genInd(true);
             model.Geometry = preMesh;
         }
 
@@ -61,12 +63,13 @@ namespace GeometryGenerator
             //Setting materials
             model.Material = base.materialM.MaterialF; model.BackMaterial = materialM.MaterialB;
             //Creating mesh
-            preMesh.Positions = genCircle(new Point3D(0, 0, 0), 1); preMesh.TriangleIndices = genInd(isTop);
+            preMesh.Positions = genCircle(new Point3D(0, 0, 0)); preMesh.TriangleIndices = genInd(isTop);
             model.Geometry = preMesh;
         }
 
         public Circle(Point3D centerP, int sidesToSet, double radius, bool isTop)
         {
+            this.radius = radius;
             materialM.InstantiateMaterial();
             if (sidesToSet % 2 == 0)
             {
@@ -75,11 +78,11 @@ namespace GeometryGenerator
             //Setting materials
             model.Material = base.materialM.MaterialF; model.BackMaterial = materialM.MaterialB;
             //Creating mesh
-            preMesh.Positions = genCircle(centerP, radius); preMesh.TriangleIndices = genInd(isTop);
+            preMesh.Positions = genCircle(centerP); preMesh.TriangleIndices = genInd(isTop);
             model.Geometry = preMesh;
         }
 
-        private Point3DCollection genCircle(Point3D centerP, double radius)
+        protected Point3DCollection genCircle(Point3D centerP)
         {
             materialM.InstantiateMaterial();
             Point3DCollection meshP = new Point3DCollection(sides + 1);
@@ -88,13 +91,13 @@ namespace GeometryGenerator
             {
                 alpha = 2 * Math.PI * i / sides;
                 x = Math.Cos(alpha); y = Math.Sin(alpha);
-                meshP.Add(new Point3D(centerP.X + (x * radius), centerP.Y + (y * radius), centerP.Z));
+                meshP.Add(new Point3D(centerP.X + (x * this.radius), centerP.Y + (y * this.radius), centerP.Z));
             }
 
             return meshP;
         }
 
-        private Int32Collection genInd(bool isTop)
+        protected Int32Collection genInd(bool isTop)
         {
             Int32Collection ind = new Int32Collection(sides * 3);
             if (isTop)

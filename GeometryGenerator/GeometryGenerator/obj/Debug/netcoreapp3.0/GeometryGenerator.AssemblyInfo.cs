@@ -14,11 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GeometryGenerator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Generates Geometry in WPF.Triangle, Cube, Circle.")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.4.4")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.4.4")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.4.5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.4.5")]
 [assembly: System.Reflection.AssemblyProductAttribute("GeometryGenerator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GeometryGenerator")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.4.4")]
+[assembly: System.Reflection.AssemblyVersionAttribute("1.0.4.5")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.
 

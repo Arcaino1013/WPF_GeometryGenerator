@@ -11,13 +11,13 @@
     "C:\\Users\\Arcaino\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "1.0.4.4",
+    "version": "1.0.4.5",
     "restore": {
-      "projectUniqueName": "G:\\VisualStudioRepo\\GeometryGenerator\\GeometryGenerator\\GeometryGenerator.csproj",
+      "projectUniqueName": "G:\\VisualStudioRepo\\WPF_GeometryGenerator\\GeometryGenerator\\GeometryGenerator\\GeometryGenerator.csproj",
       "projectName": "GeometryGenerator",
-      "projectPath": "G:\\VisualStudioRepo\\GeometryGenerator\\GeometryGenerator\\GeometryGenerator.csproj",
+      "projectPath": "G:\\VisualStudioRepo\\WPF_GeometryGenerator\\GeometryGenerator\\GeometryGenerator\\GeometryGenerator.csproj",
       "packagesPath": "C:\\Users\\Arcaino\\.nuget\\packages\\",
-      "outputPath": "G:\\VisualStudioRepo\\GeometryGenerator\\GeometryGenerator\\obj\\",
+      "outputPath": "G:\\VisualStudioRepo\\WPF_GeometryGenerator\\GeometryGenerator\\GeometryGenerator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Arcaino\\AppData\\Roaming\\NuGet\\NuGet.Config",

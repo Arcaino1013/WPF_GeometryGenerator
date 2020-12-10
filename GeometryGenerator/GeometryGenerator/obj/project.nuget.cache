@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JbYlbXbvrySm5SWbfZP4IU1D/jGFr3wLJ9fGTiSdK5qnsfuABvU3iLMzS9VqWNJruisQl/KpRS+acWe8s95g+A==",
+  "dgSpecHash": "sooSTRdegD3983v8S9m7bCNGDI60Kjvah7c6eLIkWNwFkGun2ASW94Xcv6Y8jzPOapfMMj9D24XcEbbGCt2OBg==",
   "success": true,
-  "projectFilePath": "G:\\VisualStudioRepo\\GeometryGenerator\\GeometryGenerator\\GeometryGenerator.csproj",
+  "projectFilePath": "G:\\VisualStudioRepo\\WPF_GeometryGenerator\\GeometryGenerator\\GeometryGenerator\\GeometryGenerator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Arcaino\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
     "C:\\Users\\Arcaino\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",

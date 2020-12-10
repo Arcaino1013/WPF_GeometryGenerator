@@ -28,3 +28,14 @@ G:\VisualStudioRepo\GeometryGenerator\GeometryGenerator\obj\Debug\netcoreapp3.0\
 G:\VisualStudioRepo\NuGet\netcoreapp3.0\GeometryGenerator.deps.json
 G:\VisualStudioRepo\NuGet\netcoreapp3.0\GeometryGenerator.dll
 G:\VisualStudioRepo\NuGet\netcoreapp3.0\GeometryGenerator.pdb
+G:\VisualStudioRepo\WPF_GeometryGenerator\GeometryGenerator\GeometryGenerator\obj\Debug\netcoreapp3.0\GeometryGenerator.csprojAssemblyReference.cache
+G:\VisualStudioRepo\WPF_GeometryGenerator\GeometryGenerator\GeometryGenerator\obj\Debug\netcoreapp3.0\GeneratedInternalTypeHelper.g.cs
+G:\VisualStudioRepo\WPF_GeometryGenerator\GeometryGenerator\GeometryGenerator\obj\Debug\netcoreapp3.0\GeometryGenerator_MarkupCompile.cache
+G:\VisualStudioRepo\WPF_GeometryGenerator\GeometryGenerator\GeometryGenerator\obj\Debug\netcoreapp3.0\GeometryGenerator_MarkupCompile.lref
+G:\VisualStudioRepo\WPF_GeometryGenerator\GeometryGenerator\GeometryGenerator\obj\Debug\netcoreapp3.0\Themes\Generic.baml
+G:\VisualStudioRepo\WPF_GeometryGenerator\GeometryGenerator\GeometryGenerator\obj\Debug\netcoreapp3.0\GeometryGenerator.g.resources
+G:\VisualStudioRepo\WPF_GeometryGenerator\GeometryGenerator\GeometryGenerator\obj\Debug\netcoreapp3.0\GeometryGenerator.AssemblyInfoInputs.cache
+G:\VisualStudioRepo\WPF_GeometryGenerator\GeometryGenerator\GeometryGenerator\obj\Debug\netcoreapp3.0\GeometryGenerator.AssemblyInfo.cs
+G:\VisualStudioRepo\WPF_GeometryGenerator\GeometryGenerator\GeometryGenerator\obj\Debug\netcoreapp3.0\GeometryGenerator.csproj.CoreCompileInputs.cache
+G:\VisualStudioRepo\WPF_GeometryGenerator\GeometryGenerator\GeometryGenerator\obj\Debug\netcoreapp3.0\GeometryGenerator.dll
+G:\VisualStudioRepo\WPF_GeometryGenerator\GeometryGenerator\GeometryGenerator\obj\Debug\netcoreapp3.0\GeometryGenerator.pdb
