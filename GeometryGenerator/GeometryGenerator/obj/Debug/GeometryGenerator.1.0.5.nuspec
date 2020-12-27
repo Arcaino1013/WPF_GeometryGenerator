@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>GeometryGenerator</id>
+    <version>1.0.5</version>
+    <authors>GeometryGenerator</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Generates Geometry in WPF.Triangle, Cube, Circle.Working on cylinder an transformations.</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.0" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework=".NETCoreApp3.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="G:\VisualStudioRepo\NuGet\netcoreapp3.0\GeometryGenerator.dll" target="lib\netcoreapp3.0\GeometryGenerator.dll" />
+  </files>
+</package>

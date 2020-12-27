@@ -25,6 +25,11 @@ namespace GeometryGenerator
             model.BackMaterial = materialM.MaterialB;
         }
 
+        protected void Reset_preMesh()
+        {
+            preMesh = (MeshGeometry3D)model.Geometry;
+        }
+
         public GeometryModel3D ToGeometryModel3D()
         {
             return model;

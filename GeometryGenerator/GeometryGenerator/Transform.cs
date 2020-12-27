@@ -10,19 +10,50 @@ namespace GeometryGenerator
 {
     public class Transform : Object_3D
     {
+        private Matrix3D transform_matrix = new MatrixTransform3D().Matrix;
         public void Translate(Vector3D displacement)
         {
-            throw new NotImplementedException("Havent worked on this yet");
+            TranslateTransform3D translate = new TranslateTransform3D(displacement);
+            transform_matrix = translate.Value;
+            Reset_preMesh();
+            Point3D[] points = Point3DCollection_ToArray(preMesh.Positions);
+            preMesh.Positions = new Point3DCollection();
+            for(int i = 0; i < points.Length; i++)
+            {
+                preMesh.Positions.Add(points[i] * transform_matrix);
+            }
+            model.Geometry = preMesh;
+            //throw new NotImplementedException("Havent worked on this yet");
         }
 
-        public void Scale(float factor)
+        public void Scale(Vector3D scaleFaktor)
         {
-            throw new NotImplementedException("Havent worked on this yet");
+            ScaleTransform3D scale = new ScaleTransform3D(scaleFaktor);
+            transform_matrix = scale.Value;
+            Reset_preMesh();
+            Point3D[] points = Point3DCollection_ToArray(preMesh.Positions);
+            preMesh.Positions = new Point3DCollection();
+            for (int i = 0; i < points.Length; i++)
+            {
+                preMesh.Positions.Add(points[i] * transform_matrix);
+            }
+            model.Geometry = preMesh;
+            //throw new NotImplementedException("Havent worked on this yet");
         }
 
-        public void Rotate(float angle)
+        public void Rotate(Rotation3D angleR, Point3D center)
         {
-            throw new NotImplementedException("Havent worked on this yet");
+            Matrix3DConverter converter = new Matrix3DConverter();
+            
+            Reset_preMesh();
+            Point3D[] points = Point3DCollection_ToArray(preMesh.Positions);
+            preMesh.Positions = new Point3DCollection();
+            for (int i = 0; i < points.Length; i++)
+            {
+                preMesh.Positions.Add(points[i] * transform_matrix);
+            }
+            model.Geometry = preMesh;
+            //throw new NotImplementedException("Havent worked on this yet");
         }
 
         protected Int32[] Int32Collection_ToArray(Int32Collection toConvert)
@@ -33,6 +64,20 @@ namespace GeometryGenerator
             foreach(Int32 number in toConvert)
             {
                 toReturn[counter] = number;
+                counter++;
+            }
+
+            return toReturn;
+        }
+
+        protected Point3D[] Point3DCollection_ToArray(Point3DCollection toConvert)
+        {
+            int size = toConvert.Count, counter = 0;
+            Point3D[] toReturn = new Point3D[size];
+
+            foreach (Point3D point in toConvert)
+            {
+                toReturn[counter] = point;
                 counter++;
             }
 

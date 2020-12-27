@@ -8,7 +8,7 @@ using System.Windows.Media.Media3D;
 
 namespace GeometryGenerator
 {
-    public class Cube : Object_3D
+    public class Cube : Transform
     {
         DiffuseMaterial cubeFMat = new DiffuseMaterial(new SolidColorBrush(Color.FromRgb(0,0,0))), cubeBMat = new DiffuseMaterial(new SolidColorBrush(Color.FromRgb(255,0,0)));
         Int32Collection cubeInd = new Int32Collection(36);

@@ -6,9 +6,9 @@
     <ApplicationIcon />
     <Win32Resource />
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Description>Generates Geometry in WPF.Triangle, Cube, Circle.</Description>
+    <Description>Generates Geometry in WPF.Triangle, Cube, Circle.Working on cylinder an transformations.</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Version>1.0.4.5</Version>
+    <Version>1.0.5.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

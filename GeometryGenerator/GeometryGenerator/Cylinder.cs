@@ -19,6 +19,15 @@ namespace GeometryGenerator
             CreateCylinder();
         }
 
+        public Cylinder(int sides)
+        {
+            if(sides % 2 == 0)
+            {
+                this.sides = sides;
+            }
+            CreateCylinder();
+        }
+
         private void CreateCylinder()
         {
             SetCenterPoints();
@@ -54,15 +63,9 @@ namespace GeometryGenerator
             {
                 faceIn[0] = i; faceIn[1] = i + 1; faceIn[2] = sides + i; faceIn[3] = sides + (1 + i);
 
-                //Face 1 : M1 M2 N1 || See Krita Sketch
-                totalI.Add(faceIn[0]); totalI.Add(faceIn[1]); totalI.Add(faceIn[3]);
-                //Face 2: N1 N2 M2 || See Krita Sketch
-                totalI.Add(faceIn[2]); totalI.Add(faceIn[3]); totalI.Add(faceIn[1]);
+
             }
-            //Face 1
-            totalI.Add(sides); totalI.Add(1); totalI.Add(1 + (sides + 1));
-            //Face 2
-            totalI.Add(1 + (sides + 1)); totalI.Add(sides + (sides + 1)); totalI.Add(1);
+
         }
 
 
